@@ -842,6 +842,7 @@ end testimonial
     background-color: #FF3933;
     color: #fff;
     border-color: #FF3933;
+    transition: all .4s ease-in-out;
 }
 
 .pricing_sec .btn_cust.active {
