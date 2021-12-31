@@ -818,6 +818,10 @@ end testimonial
 /*======================
  pricing
 ========================*/
+.sec-title {
+    position: relative;
+    margin-bottom: 50px;
+}
 .sec-title h1{
     font-size: 40px;
 }
@@ -1053,6 +1057,9 @@ contact
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
+    font-size: 25px;
+    padding-right: 25px!important;
+    padding-left: 25px!important;
 }
 
 .contact_sec .btn_cust:hover {
@@ -1111,6 +1118,12 @@ contact
     color: #D54062;
     border-color: #D54062;
 }
+.btn:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .form-item {
     vertical-align: middle;
     margin: 20px 0;
@@ -1161,7 +1174,49 @@ contact
 .footer_link:hover {
     color: #ffffff;
 }
+.pure-dark {
+    background-color: #091B29;
+}
 
+.py-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-text {
+    color: white;
+    font-size: 18px;
+}
+.up-down-new {
+    animation: up-down 3s alternate infinite;
+    -webkit-animation: up-down 3s alternate infinite;
+}
+
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(30px);
+        -webkit-transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+        -webkit-transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+}
+.fix {
+    overflow: hidden;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+.pt-100 {
+    padding-top: 100px;
+}
 /*======================
 end contact
 ========================*/
