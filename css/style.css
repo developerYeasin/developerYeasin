@@ -818,6 +818,10 @@ end testimonial
 /*======================
  pricing
 ========================*/
+.sec-title {
+    position: relative;
+    margin-bottom: 50px;
+}
 .sec-title h1{
     font-size: 40px;
 }
@@ -838,6 +842,7 @@ end testimonial
     background-color: #FF3933;
     color: #fff;
     border-color: #FF3933;
+    transition: all .4s ease-in-out;
 }
 
 .pricing_sec .btn_cust.active {
@@ -1039,6 +1044,182 @@ end testimonial
 
 /*======================
 end pricing
+========================*/
+/*======================
+contact
+========================*/
+
+.contact_sec .btn_cust {
+    margin-right: 10px;
+    background-color: #FF3933;
+    color: #fff;
+    border-color: #FF3933;
+    margin-bottom: 8px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    font-size: 25px;
+    padding-right: 25px!important;
+    padding-left: 25px!important;
+}
+
+.contact_sec .btn_cust:hover {
+    border-color: #091B29;
+    background-color: #091B29;
+    color: #fff;
+}
+
+.contact_sec .social_contact a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: #00b894;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    border: 1px solid #00b894;
+    -webkit-box-shadow: 0px 0px 3px #c7c7c7;
+    box-shadow: 0px 0px 3px #c7c7c7;
+}
+
+.contact_sec .social_contact a:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.contact_sec .social_contact a i {
+    font-size: 20px;
+}
+
+.contact_sec .social_contact .skype:hover {
+    color: #01A6E1;
+    border-color: #01A6E1;
+}
+
+.contact_sec .social_contact .fb:hover {
+    color: #4867AA;
+    border-color: #4867AA;
+}
+
+.contact_sec .social_contact .linked:hover {
+    color: #0077B5;
+    border-color: #0077B5;
+}
+
+.contact_sec .social_contact .phone:hover {
+    color: #7A3BC1;
+    border-color: #7A3BC1;
+}
+
+.contact_sec .social_contact .email:hover {
+    color: #D54062;
+    border-color: #D54062;
+}
+.btn:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.form-item {
+    vertical-align: middle;
+    margin: 20px 0;
+    -webkit-box-shadow: rgb(17 17 26 / 10%) 0px 4px 16px, rgb(17 17 26 / 5%) 0px 8px 32px;
+    box-shadow: rgb(17 17 26 / 10%) 0px 4px 16px, rgb(17 17 26 / 5%) 0px 8px 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.form-item input {
+    outline: none;
+    border: none;
+    margin: 0;
+    width: 90%;
+    padding: 15px 10px;
+    display: inline-block;
+    font-size: 18px;
+}
+.form-item textarea {
+    outline: none;
+    border: none;
+    margin: 0;
+    width: 90%;
+    padding: 18px 10px;
+    display: inline-block;
+    font-size: 18px;
+}
+.form-item span {
+    width: 10%;
+    display: inline-block;
+    font-size: 30px;
+    padding: 5px 15px;
+    vertical-align: middle;
+    color: #091B29;
+}
+.footer_link {
+    color: #00b894;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    font-weight: 600;
+    color: #FF3933;
+}
+
+.footer_link:hover {
+    color: #ffffff;
+}
+.pure-dark {
+    background-color: #091B29;
+}
+
+.py-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-text {
+    color: white;
+    font-size: 18px;
+}
+.up-down-new {
+    animation: up-down 3s alternate infinite;
+    -webkit-animation: up-down 3s alternate infinite;
+}
+
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(30px);
+        -webkit-transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+        -webkit-transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+}
+.fix {
+    overflow: hidden;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+.pt-100 {
+    padding-top: 100px;
+}
+/*======================
+end contact
 ========================*/
 
 
