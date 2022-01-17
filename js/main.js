@@ -100,4 +100,13 @@ $(".wpc").on('click', function () {
     $("#td").siblings().hide();
   });
   
-  // 
+  // back to top
+
+//  const arrowBtn = document.getElementById("backToTop");
+ const arrowBtn = document.querySelector(".back-to-top");
+ window.addEventListener("scroll", function () {
+   arrowBtn.classList.toggle("sticky", 800 < window.scrollY);
+ }),
+   arrowBtn.addEventListener("click", () => {
+     (document.body.scrollTop = 0), (document.documentElement.scrollTop = 0);
+   });

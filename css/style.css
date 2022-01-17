@@ -210,6 +210,27 @@ header
 .header-img img{
     width: 100%;
 }
+.up-down-new {
+    animation: up-down 3s alternate infinite;
+    -webkit-animation: up-down 3s alternate infinite;
+}
+
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(30px);
+        -webkit-transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+        -webkit-transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+}
 
 /*======================
 end header
@@ -1222,6 +1243,43 @@ contact
 }
 /*======================
 end contact
+========================*/
+/*======================
+back to top
+========================*/
+.back-to-top{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: var(--sub-color);
+    height: 50px;
+    width: 44px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    display: none;
+    z-index: 99999;
+    transition: all .4s ease-in-out;
+}
+.back-to-top.sticky {
+    display: block;
+}
+.back-to-top span{
+    color: #1DDAB7;
+    font-size: 23px;
+    font-weight: 700;
+    transition: all .4s ease-in-out;
+}
+.back-to-top:hover{
+    background: var(--btn-color);
+    transform: scale(1.2);
+    box-shadow: 0 0 13px 7px #00000080;
+}
+.back-to-top:hover span{
+    color: white;
+}
+/*======================
+end back to top
 ========================*/
 
 
