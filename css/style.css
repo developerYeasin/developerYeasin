@@ -91,6 +91,27 @@ navigation bar
     color: var(--text-color);
     font-size: var(--nav-link-f);
     font-weight: 700;
+    transition: var(--transition);
+    position: relative;
+    text-transform: uppercase;
+}
+.navbar-menu ul li a:hover{
+    color: var(--sub-color);
+}
+.navbar-menu ul li a::after {
+    position: absolute;
+    content: "";
+    width: 105%;
+    height: 3px;
+    background: var(--sub-color);
+    left: -2px;
+    bottom: -26px;
+    opacity: 0;
+    transition: var(--transition);
+}
+.navbar-menu ul li a:hover::after{
+    opacity: 1;
+    bottom: -5px;
 }
 .nav-btn {
     background: var(--primary-color);
