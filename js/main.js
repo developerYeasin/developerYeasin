@@ -1,40 +1,39 @@
-const btns = document.querySelector('.nav-btn');
+new WOW().init();
+const btns = document.querySelector(".nav-btn");
 
-btns.onmousemove = function(e){
-    const x = e.pageX - btns.offsetLeft;
-    const y = e.pageY - btns.offsetTop;
-    btns.style.setProperty('--x', x + 'px');
-    btns.style.setProperty('--y', y + 'px');
+btns.onmousemove = function (e) {
+  const x = e.pageX - btns.offsetLeft;
+  const y = e.pageY - btns.offsetTop;
+  btns.style.setProperty("--x", x + "px");
+  btns.style.setProperty("--y", y + "px");
 };
-const main_btns = document.querySelectorAll('.main-btn');
+const main_btns = document.querySelectorAll(".main-btn");
 
-main_btns.forEach(function(main_btn){
-main_btn.onmousemove = function(ev){
+main_btns.forEach(function (main_btn) {
+  main_btn.onmousemove = function (ev) {
     const x = ev.pageX - main_btn.offsetLeft;
     const y = ev.pageY - main_btn.offsetTop;
-    main_btn.style.setProperty('--x', x + 'px');
-    main_btn.style.setProperty('--y', y + 'px');
-};
+    main_btn.style.setProperty("--x", x + "px");
+    main_btn.style.setProperty("--y", y + "px");
+  };
 });
 
 //typeing js
 
-var typed = new Typed('.typing-animation', {
-    strings: [
-        "Web Developer",
-        "<span class='red'>Web designer</span>",
-        "<span class='blue'>Wp Expert</span>",
-    ],
-    typeSpeed: 50,
-    backSpeed: 50,
-    loop: true,
-  });
+var typed = new Typed(".typing-animation", {
+  strings: [
+    "Web Developer",
+    "<span class='red'>Web designer</span>",
+    "<span class='blue'>Wp Expert</span>",
+  ],
+  typeSpeed: 50,
+  backSpeed: 50,
+  loop: true,
+});
 
+// misitup
 
-  // misitup
-
-
-  var mixer = mixitup(".portfolio-items");
+var mixer = mixitup(".portfolio-items");
 //   var mixer = mixitup(".gallery-all-item");
 
 //testimonial_content
@@ -77,36 +76,34 @@ testimonial_img.owlCarousel({
     testimonial_img.trigger("prev.owl.carousel");
   });
 
+// prising table
+$(".btn_cust").click(function () {
+  $(this).addClass("active");
+  $(this).siblings(".active").removeClass("active");
+});
 
-  // prising table
-  $(".btn_cust").click(function () {
-    $(this).addClass("active");
-    $(this).siblings(".active").removeClass("active");
-  });
-  
-$(".wpc").on('click', function () {
+$(".wpc").on("click", function () {
   $("#wp").show().addClass("animated slideInLeft");
   $("#wp").siblings().hide();
 });
-  
-  $(".htc").on('click', function () {
-    $("#ht").show().addClass("animated slideInUp");
-    $("#ht").siblings().hide();
-  });
 
+$(".htc").on("click", function () {
+  $("#ht").show().addClass("animated slideInUp");
+  $("#ht").siblings().hide();
+});
 
-  $(".tdc").on('click', function () {
-    $("#td").show().addClass("animated slideInRight");
-    $("#td").siblings().hide();
-  });
-  
-  // back to top
+$(".tdc").on("click", function () {
+  $("#td").show().addClass("animated slideInRight");
+  $("#td").siblings().hide();
+});
+
+// back to top
 
 //  const arrowBtn = document.getElementById("backToTop");
- const arrowBtn = document.querySelector(".back-to-top");
- window.addEventListener("scroll", function () {
-   arrowBtn.classList.toggle("sticky", 800 < window.scrollY);
- }),
-   arrowBtn.addEventListener("click", () => {
-     (document.body.scrollTop = 0), (document.documentElement.scrollTop = 0);
-   });
+const arrowBtn = document.querySelector(".back-to-top");
+window.addEventListener("scroll", function () {
+  arrowBtn.classList.toggle("sticky", 800 < window.scrollY);
+}),
+  arrowBtn.addEventListener("click", () => {
+    (document.body.scrollTop = 0), (document.documentElement.scrollTop = 0);
+  });
