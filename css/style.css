@@ -10,9 +10,10 @@ body{
     font-family: 'Livvic', sans-serif;
     box-sizing: border-box;
 }
-
-
-
+::selection{
+    color: #fff;
+    background: #35CCFF;
+}
 :root{
     --main-color: #FF3759;
     --sub-color: #FFD600;
