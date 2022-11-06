@@ -1,3 +1,10 @@
+const navigatoinbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+  navigatoinbar.classList.toggle("sticky-header",  window.scrollY > 100);
+})
+
+
 new WOW().init();
 const btns = document.querySelector(".nav-btn");
 
@@ -107,3 +114,15 @@ window.addEventListener("scroll", function () {
   arrowBtn.addEventListener("click", () => {
     (document.body.scrollTop = 0), (document.documentElement.scrollTop = 0);
   });
+
+
+const navbar = document.getElementById("navbar");
+const sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("fixed")
+  } else {
+    navbar.classList.remove("fixed");
+  }
+}
